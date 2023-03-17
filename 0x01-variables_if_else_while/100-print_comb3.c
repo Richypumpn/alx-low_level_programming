@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main - Entry point
@@ -8,23 +7,18 @@
  */
 int main(void)
 {
-	int c, i;
+	int x, y;
 
-	for (c = '0'; c <= '9'; c++)
+	for (x = '0'; x <= '9'; x++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (y = x + 1; i <= 10; y++)
 		{
-			if (c < i)
-			{
-				putchar(c);
-				putchar(i);
-
-				if (c != '8' || ( == '8' && i != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			putchar((x % 10) + '0');
+			putchar((y % 10) + '0');
+			if (x == 8 && y == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
