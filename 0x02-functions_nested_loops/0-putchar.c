@@ -3,8 +3,8 @@
 
 /**
  * main: Entry
- * Description: print _putchar
- * Return: 0
+ * Description: it print the word _putchar, followed by a new line
+ * Return: Always 0
  */
 int main(void)
 {
