@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main: Entry
+ * main: Check description
  * Description: it prints the word _putchar, followed by a new line
  * Return: Always 0
  */
