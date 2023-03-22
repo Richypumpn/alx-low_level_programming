@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_time_table - print a multiplication table up to param
+ * print_time_table - prints the n times table, starting with 0.
  * @n: The number to be treated
  * Return: Number matrix
  */
@@ -10,6 +10,7 @@ void print_times_table(int n)
 
 {
 	int x, y, z;
+	
 	if (n >= 0 && n <= 14)
 	{
 		for (x = 0; x <= n; x++)
